@@ -210,11 +210,11 @@ $social = \App\Models\Social::all();
                 <div class="w-full md:w-1/3 lg:w-1/6">
                     <h4 class="text-white text-2xl font-semibold">İletişim</h4>
                     <ul class="my-4 flex flex-col gap-6">
-                        <li><a href="{{ route('contact') }}" class="text-white flex flex-row items-center gap-1"><i class="bi bi-geo-alt p-2 bg-cyan-600 text-white rounded-full"></i>
+                        <li><a href="{{ route('contact') }}" class="text-white flex flex-row items-center gap-1"><i class="bi bi-geo-alt p-2 bg-amber-600 text-white rounded-full"></i>
                                 {{ $contact->address ?? '' }}</a></li>
-                        <li><a href="tel:{{ $contact->phone ?? '' }}" class="text-white"><i class="bi bi-phone p-2 bg-cyan-600 text-white rounded-full"></i> {{ $contact->phone ?? '' }}</a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=9{{ str_replace(' ', '', $contact->whatsapp ?? '') }}" class="text-white"><i class="bi bi-whatsapp p-2 bg-cyan-600 text-white rounded-full"></i> {{ $contact->whatsapp ?? '' }} </a></li>
-                        <li><a href="mailto:{{ $contact->email ?? '' }}" class="text-white"><i class="bi bi-envelope p-2 bg-cyan-600 text-white rounded-full"></i> {{ $contact->email ?? '' }}</a></li>
+                        <li><a href="tel:{{ $contact->phone ?? '' }}" class="text-white"><i class="bi bi-phone p-2 bg-amber-600 text-white rounded-full"></i> {{ $contact->phone ?? '' }}</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=9{{ str_replace(' ', '', $contact->whatsapp ?? '') }}" class="text-white"><i class="bi bi-whatsapp p-2 bg-amber-600 text-white rounded-full"></i> {{ $contact->whatsapp ?? '' }} </a></li>
+                        <li><a href="mailto:{{ $contact->email ?? '' }}" class="text-white"><i class="bi bi-envelope p-2 bg-amber-600 text-white rounded-full"></i> {{ $contact->email ?? '' }}</a></li>
                     </ul>
                 </div>
             </div>
