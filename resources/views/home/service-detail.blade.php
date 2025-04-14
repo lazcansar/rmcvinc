@@ -8,6 +8,9 @@
             margin: 0.25rem 0;
             color: #374151;
         }
+        article h2 {
+            font-size: 1.5rem;
+        }
     </style>
 @endsection
 @section('main')
@@ -21,7 +24,7 @@
     @endphp
     <x-bread-crumb :items="$breadcrumbItems"/>
 
-    <section class="px-4 lg:px-0 py-8 bg-gray-50">
+    <section class="px-4 lg:px-0 py-8 bg-white">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row flex-wrap">
                 <article class="w-full md:w-2/3 md:pe-8">
@@ -29,16 +32,16 @@
                     <div class="flex flex-row items-center justify-between">
                         <span class="text-indigo-950">{{ $service->updated_at->format("d.m.Y") }}</span>
                     </div>
-                    <h1 class="text-4xl font-semibold text-indigo-900">{{ $service->title }}</h1>
+                    <h1 class="text-4xl font-semibold text-amber-700">{{ $service->title }}</h1>
                     {!! $service->description !!}
 
                 </article>
                 <div class="w-full md:w-1/3">
-                    <div class="p-4 bg-gray-100 border">
-                        <h3 class="text-xl font-medium text-indigo-900 mb-2">Diğer Hizmetlerimiz</h3>
+                    <div class="p-4 bg-gray-50 border rounded">
+                        <h3 class="text-xl font-medium text-amber-700 mb-2">Diğer Hizmetlerimiz</h3>
                         <ul>
                             @foreach($services as $listService)
-                                <li class="py-2 border-b text-indigo-950"><a href="{{ route('service.detail', $listService->slug) }}" class="ms-0 transition-all hover:ms-1"><i class="bi bi-box-arrow-right"></i> {{ $listService->title }}</a></li>
+                                <li class="py-2 border-b text-amber-700"><a href="{{ route('service.detail', $listService->slug) }}" class="ms-0 transition-all hover:ms-1"><i class="bi bi-box-arrow-right"></i> {{ $listService->title }}</a></li>
                             @endforeach
                         </ul>
                     </div>

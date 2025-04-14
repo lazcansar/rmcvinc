@@ -94,7 +94,7 @@
 
     <section class="px-4 lg:px-0 my-8 blog bg-gray-100 py-8">
         <div class="container mx-auto">
-            <h3 class="text-4xl font-bold text-indigo-950 text-center">Blog</h3>
+            <h3 class="text-4xl font-bold text-amber-700 text-center">Blog</h3>
             <p class="my-2 text-gray-700 text-center text-lg">Yeni yazılarımız yayında! Keşfetmek için hemen tıklayın...</p>
             <div class="text-end">
                 <a href="{{ route('blog') }}" class="inline-block py-2 px-4 bg-indigo-900 transition hover:bg-sky-700 text-white rounded">Tümünü görüntüle</a>
