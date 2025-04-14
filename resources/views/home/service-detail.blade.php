@@ -11,6 +11,17 @@
         article h2 {
             font-size: 1.5rem;
         }
+        article h3 {
+            font-size: 1.5rem;
+        }
+        article ul, article ol {
+            margin-top: 0.5rem;
+            margin-left: 1.5rem;
+            list-style: decimal;
+        }
+        article ul li, article ol li{
+            margin: 0.5rem 0;
+        }
     </style>
 @endsection
 @section('main')
