@@ -116,12 +116,12 @@ $social = \App\Models\Social::all();
                 </div>
                 <div class="flex-auto">
                     <ul class="flex flex-row flex-wrap gap-4 uppercase">
-                        <li><a href="{{ route('home') }}" class="font-semibold text-indigo-900 transition hover:text-indigo-950">Anasayfa</a></li>
-                        <li><a href="{{ route('about') }}" class="font-semibold text-indigo-900 transition hover:text-indigo-950">Kurumsal</a></li>
-                        <li><a href="{{ route('services') }}" class="font-semibold text-indigo-900 transition hover:text-indigo-950">Hizmetler</a></li>
-                        <li><a href="{{ route('gallery') }}" class="font-semibold text-indigo-900 transition hover:text-indigo-950">Galeri</a></li>
-                        <li><a href="{{ route('blog') }}" class="font-semibold text-indigo-900 transition hover:text-indigo-950">Blog</a></li>
-                        <li><a href="{{ route('contact') }}" class="font-semibold text-indigo-900 transition hover:text-indigo-950">İletişim</a></li>
+                        <li><a href="{{ route('home') }}" class="font-semibold text-amber-700 transition hover:text-indigo-950">Anasayfa</a></li>
+                        <li><a href="{{ route('about') }}" class="font-semibold text-amber-700 transition hover:text-indigo-950">Kurumsal</a></li>
+                        <li><a href="{{ route('services') }}" class="font-semibold text-amber-700 transition hover:text-indigo-950">Hizmetler</a></li>
+                        <li><a href="{{ route('gallery') }}" class="font-semibold text-amber-700 transition hover:text-indigo-950">Galeri</a></li>
+                        <li><a href="{{ route('blog') }}" class="font-semibold text-amber-700 transition hover:text-indigo-950">Blog</a></li>
+                        <li><a href="{{ route('contact') }}" class="font-semibold text-amber-700 transition hover:text-indigo-950">İletişim</a></li>
                     </ul>
                 </div>
                 <div class="flex-auto text-xl font-medium text-green-600">
