@@ -29,7 +29,7 @@
     @php
         $breadcrumbItems = [
             ['label' => 'Anasayfa', 'url' => '/'],
-            ['label' => 'Hizmetler', 'image' => 'theme/kurumsal-bread.webp', 'url' => '/hizmetler'],
+            ['label' => 'Hizmetler', 'image' => '/bread-crumb.webp', 'url' => '/hizmetler'],
             ['label' => "$service->title"]
         ];
     @endphp

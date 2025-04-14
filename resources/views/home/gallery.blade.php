@@ -6,7 +6,7 @@
     @php
         $breadcrumbItems = [
             ['label' => 'Anasayfa', 'url' => '/'],
-            ['label' => 'Galeri', 'image' => 'theme/kurumsal-bread.webp', 'url' => '#'],
+            ['label' => 'Galeri', 'image' => '/bread-crumb.webp', 'url' => '#'],
         ];
     @endphp
     <x-bread-crumb :items="$breadcrumbItems"/>

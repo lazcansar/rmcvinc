@@ -15,7 +15,7 @@
     @php
         $breadcrumbItems = [
             ['label' => 'Anasayfa', 'url' => '/'],
-            ['label' => 'Blog', 'image' => 'theme/kurumsal-bread.webp', 'url' => '/blog'],
+            ['label' => 'Blog', 'image' => '/bread-crumb.webp', 'url' => '/blog'],
             ['label' => "$blog->title"]
         ];
     @endphp
