@@ -51,6 +51,19 @@
         </div>
     </section>
 
+
+    <section class="px-4 lg:px-0 py-8 services bg-gray-100">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-indigo-950 text-center">Hizmetlerimiz</h3>
+            <p class="my-2 text-gray-700 text-center text-lg">Kepenk, Kepenk Tamiri, Kepenk Servisi, Otomatik Kepenk, Kepenk Motoru ve çok daha fazlası ...</p>
+            <div class="flex flex-col sm:flex-row flex-wrap">
+                @foreach($services as $service)
+                    <x-services-card :service="$service"></x-services-card>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
     <section class="px-4 lg:px-0 my-8 gallery">
         <div class="container mx-auto">
             <h3 class="text-4xl text-center font-bold text-amber-700">Galeri</h3>
@@ -76,18 +89,6 @@
             <x-modal></x-modal>
 
 
-        </div>
-    </section>
-
-    <section class="px-4 lg:px-0 py-8 services bg-gray-100">
-        <div class="container mx-auto">
-            <h3 class="text-4xl font-bold text-indigo-950 text-center">Hizmetlerimiz</h3>
-            <p class="my-2 text-gray-700 text-center text-lg">Kepenk, Kepenk Tamiri, Kepenk Servisi, Otomatik Kepenk, Kepenk Motoru ve çok daha fazlası ...</p>
-            <div class="flex flex-col sm:flex-row flex-wrap">
-                @foreach($services as $service)
-                    <x-services-card :service="$service"></x-services-card>
-                @endforeach
-            </div>
         </div>
     </section>
 
