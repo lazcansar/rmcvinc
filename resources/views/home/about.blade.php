@@ -1,6 +1,6 @@
 @extends('theme')
 @section('title'){{'Kurumsal'}}@endsection
-@section('description'){{'Elis Kepenk olarak, kepenk sistemlerinde güvenlik, estetik ve konforu bir araya getiriyoruz.'}}@endsection
+@section('description'){{'Gebze Vinç Kiralama firması olan RMC Vinç Platform olarak Gebze de kiralık vinç hizmeti sunuyoruz.'}}@endsection
 @section('main')
 
     @php
