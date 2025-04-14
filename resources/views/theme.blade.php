@@ -95,22 +95,12 @@ $contact = \App\Models\Contact::latest()->first();
 $social = \App\Models\Social::all();
     @endphp
 <header class="sticky top-0 z-50">
-    <section class="hidden lg:block px-4 lg:px-0 bg-indigo-950">
+    <section class="hidden lg:block px-4 lg:px-0 bg-amber-800 py-2 text-sm">
         <div class="container mx-auto">
-            <div class="flex flex-col sm:flex-row flex-wrap gap-y-2">
-                <div class="md:w-1/2 md:pe-8 py-4">
-                    <div class="flex flex-row flex-wrap justify-between">
-                        <a href="mailto:{{ $contact->email ?? '' }}" class="text-white"><i class="bi bi-envelope-check-fill"></i> {{ $contact->email ?? '' }}</a>
-                        <a href="tel:{{ $contact->phone ?? '' }}" class="text-white"><i class="bi bi-telephone-outbound-fill"></i> {{ $contact->phone ?? '' }}</a>
-                        <a href="{{ route('contact') }}" class="text-white"><i class="bi bi-alarm-fill"></i> 7/24 Destek</a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 py-4 bg-sky-700 outline-none rounded-tl-full rounded-br-full flex flex-wrap gap-4 justify-center items-center">
-                    <span class="font-semibold text-white">Takip Edin <i class="bi bi-arrow-right"></i></span>
-                    @foreach($social as $soc)
-                        <a href="{{ $soc->url }}" target="_blank"><i class="bi bi-{{ strtolower($soc->name) }} text-xl text-white"></i></a>
-                    @endforeach
-                </div>
+            <div class="flex flex-row flex-wrap justify-between">
+                <a href="mailto:{{ $contact->email ?? '' }}" class="text-white"><i class="bi bi-envelope-check-fill"></i> {{ $contact->email ?? '' }}</a>
+                <a href="tel:{{ $contact->phone ?? '' }}" class="text-white"><i class="bi bi-telephone-outbound-fill"></i> {{ $contact->phone ?? '' }}</a>
+                <a href="{{ route('contact') }}" class="text-white"><i class="bi bi-geo-alt"></i> {{ $contact->address }}</a>
             </div>
         </div>
     </section>
@@ -120,8 +110,7 @@ $social = \App\Models\Social::all();
             <div class="flex flex-row flex-wrap items-center justify-between">
                 <div class="flex-auto lg:text-3xl flex items-center gap-2 font-bold">
                     <a href="{{ route('home') }}">
-                        <img src="{{ asset("/storage/images/theme/logo.png") }}" class="h-12 inline-block" alt="">
-                        ELİS KEPENK
+                        <img src="{{ asset("/storage/images/rmc-gebze-sepetli-vinc.png") }}" class="h-12 inline-block" alt="Gebze Kiralık Vinç Logo" title="Gebze Kiralık Vinç">
                     </a>
                 </div>
                 <div class="flex-auto">
@@ -194,8 +183,8 @@ $social = \App\Models\Social::all();
         <div class="container mx-auto">
             <div class="flex flex-col sm:flex-row flex-wrap gap-y-4">
                 <div class="w-full md:w-full lg:w-3/6 lg:pe-8">
-                    <h4 class="text-white text-2xl font-semibold uppercase">Elis Kepenk</h4>
-                    <p class="my-4 text-gray-100 leading-relaxed">ELİS KEPENK olarak müşterilerimize güler yüzlü ve profesyonel hizmet sunuyoruz. İstanbul Gaziosmanpaşa ilçesinde faaliyet gösteren firmamız İstanbul'un Avrupa ve Anadolu yakasında Kepenk Tamiri, Otomatik Kepenk Tamiri ve Kepenk Servisi alanlarında hizmet sunuyor.</p>
+                    <h4 class="text-white text-2xl font-semibold uppercase">Gebze Kiralık Vinç, Sepetli Vinç</h4>
+                    <p class="my-4 text-gray-100 leading-relaxed">Gebze RMC Vinç kiralama firması olarak, müşterilerimize vinç kiralama, manlift kiralama, forklift kiralama, sepetli vinç kiralama ve makaslı platform kiralama hizmetleri sunuyoruz. Vinç kiralama fiyatları için bizimle iletişime geçin! </p>
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
                     <h4 class="text-white text-2xl font-semibold">Bağlantılar</h4>
@@ -238,7 +227,7 @@ $social = \App\Models\Social::all();
         <div class="container mx-auto">
             <div class="flex flex-wrap flex-col md:flex-row items-center">
                 <div class="md:w-1/2 text-white">
-                    <p>Copyright &copy {{ date("Y") }} <a href="{{ route('home') }}">ElisKepenk.com</a> | Kepenk Fiyatları - Kepenk Tamiri - Kepenk Servisi</p>
+                    <p>Copyright &copy {{ date("Y") }} <a href="{{ route('home') }}">RMCVinc.com</a> | Gebze Vinç Kiralama - Kiralık Vinç - Sepetli Vinç Kiralama</p>
                 </div>
                 <div class="md:w-1/2 text-white md:text-end">
                     <p>Tasarım & Kodlama <i class="bi bi-heart-fill"></i> <a href="https://afyazilim.com" target="_blank" class="hover:underline">A&F Yazılım ve E-Ticaret Hizmetleri</a></p>

@@ -1,25 +1,25 @@
 @extends('theme')
-@section('title'){{'İstanbul Kepenk Tamiri, Otomatik Kepenk Servisi'}}@endsection
-@section('description'){{'Elis Kepenk firması olarak kepenk tamiri, kepenk servisi, otomatik kepenk sistemleri, kepenk motoru tamiri ve daha fazlasında profesyonel hizmet sunuyoruz.'}}@endsection
+@section('title'){{'Gebze Vinç Kiralama, Sepetli Vinç Kiralama'}}@endsection
+@section('description'){{'Gebze vinç kiralama, kiralık vinç ve sepetli vinç kiralama ile manlift kiralama hizmetlerimiz bulunmaktadır.'}}@endsection
 @section('main')
 
     <section>
         <div class="swiper slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide relative">
-                    <img src="{{ asset("/storage/images/slider/elis-kepenk.webp") }}" alt="Elis Kepenk" class="brightness-50 w-full min-h-[600px] lg:max-h-[500px] object-cover">
-                    <div class="absolute text-center md:text-start top-1/2 lg:left-16 lg:translate-x-16 -translate-y-1/2 md:w-[700px] px-4 lg:px-0">
+                    <img src="{{ asset("/storage/images/gebze-vinc-kiralama-slider.webp") }}" alt="Gebze Kiralık Vinç" class="brightness-50 w-full min-h-[600px] lg:max-h-[500px] object-cover">
+                    <div class="absolute text-center md:text-start top-1/2 lg:left-16 lg:translate-x-16 -translate-y-1/2 md:w-[768px] px-4 lg:px-0">
                         <div class="md:text-3xl text-white font-bold mb-2">
-                            <h1><i class="bi bi-command"></i> ELİS KEPENK</h1>
+                            <h1><i class="bi bi-command"></i> RMC VİNÇ</h1>
                         </div>
                         <div class="md:text-xl text-white font-semibold mb-2">
-                            Hoş Geldiniz!
+                            Gebze Vinç Kiralama, Sepetli Vinç Kiralama, Manlift Kiralama, Forklift Kiralama
                         </div>
                         <div class="md:text-lg text-white mb-2">
-                            Elis Kepenk firması olarak Kepenk, Kepenk Tamiri, Kepenk Servisi, Otomatik Kepenk, Kepenk Motoru Tamiri ve çok daha fazla alanda sizlere profesyonel hizmet sunuyoruz.
+                            RMC Vinç olarak, ağır işlerinizi hafifletiyoruz. Kaldırma Gücünüz, Çözüm Ortağınız!
                         </div>
-                        <a href="https://api.whatsapp.com/send?phone=9{{ str_replace(' ', '', $contact->whatsapp ?? '') }}" class="bg-indigo-950 transition hover:bg-sky-800 text-white px-4 py-2 rounded inline-block"><i class="bi bi-tags"></i> Fiyat Al</a>
-                        <a href="tel:{{ $contact->phone ?? '' }}" class="bg-sky-800 transition hover:bg-indigo-950 text-white px-4 py-2 rounded inline-block"><i class="bi bi-person-add"></i> İletişim</a>
+                        <a href="https://api.whatsapp.com/send?phone=9{{ str_replace(' ', '', $contact->whatsapp ?? '') }}" class="bg-amber-700 transition hover:bg-amber-800 text-white px-4 py-2 rounded inline-block"><i class="bi bi-whatsapp"></i> Hemen İletişime Geç</a>
+                        <a href="tel:{{ $contact->phone ?? '' }}" class="bg-sky-800 transition hover:bg-indigo-950 text-white px-4 py-2 rounded inline-block"><i class="bi bi-telephone-plus"></i> Hemen Ara</a>
                     </div>
                 </div>
             </div>

@@ -89,7 +89,7 @@ class PageController extends Controller
     public function register ()
     {
         $name = 'Admin';
-        $email = 'admin@eliskepenk.com';
+        $email = 'admin@rmcvinc.com';
         $password = 'Kmdvn3z7m7*';
 
         $user = User::create([
