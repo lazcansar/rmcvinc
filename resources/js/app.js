@@ -1,5 +1,5 @@
 import './bootstrap';
-import 'jquery/src/jquery.js';
+import Jquery from 'jquery';
 import 'swiper/swiper-bundle.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

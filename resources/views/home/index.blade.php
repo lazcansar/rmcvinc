@@ -27,6 +27,18 @@
         </div>
     </section>
 
+    <section class="px-4 lg:px-0 py-8 services bg-gray-100">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-amber-700 text-center">Hizmetlerimiz</h3>
+            <p class="my-2 text-gray-700 text-center text-lg">Gebze Vinç Kiralama, Kiralık Vinç, Manlift Kiralama, Sepetli Vinç Kiralama, Forklift Kiralama, Eklemli Platform Kiralama ve Kiralık Makaslı Platform çeşitlerimiz ile hizmetinizdeyiz.</p>
+            <div class="flex flex-col sm:flex-row flex-wrap">
+                @foreach($services as $service)
+                    <x-services-card :service="$service"></x-services-card>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
     <section class="px-4 lg:px-0 py-8 bg-gray-100 about">
         <div class="container mx-auto">
             <h2 class="text-4xl text-center font-bold text-amber-700">Kurumsal</h2>
@@ -51,18 +63,6 @@
         </div>
     </section>
 
-
-    <section class="px-4 lg:px-0 py-8 services bg-gray-100">
-        <div class="container mx-auto">
-            <h3 class="text-4xl font-bold text-indigo-950 text-center">Hizmetlerimiz</h3>
-            <p class="my-2 text-gray-700 text-center text-lg">Kepenk, Kepenk Tamiri, Kepenk Servisi, Otomatik Kepenk, Kepenk Motoru ve çok daha fazlası ...</p>
-            <div class="flex flex-col sm:flex-row flex-wrap">
-                @foreach($services as $service)
-                    <x-services-card :service="$service"></x-services-card>
-                @endforeach
-            </div>
-        </div>
-    </section>
 
     <section class="px-4 lg:px-0 my-8 gallery">
         <div class="container mx-auto">

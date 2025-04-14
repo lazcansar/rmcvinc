@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.modal-image-container img {
+    width: 100% !important;
+}
+.active-modal-image {
+    max-width: 100% !important;
+    min-width: 100% !important;
+    display: block !important;
+    object-fit: contain !important;
+}

@@ -171,10 +171,10 @@ $social = \App\Models\Social::all();
 
 <footer>
     <section class="fixed bottom-0 z-10 left-[50%] -translate-x-1/2 flex justify-center">
-        <div class="bg-indigo-950 text-white p-4 rounded-tl">
+        <div class="bg-amber-600 text-white p-4 rounded-tl">
             <a href="https://api.whatsapp.com/send?phone=9{{ str_replace(' ', '', $contact->whatsapp ?? '') }}"><i class="bi bi-whatsapp"></i> Whatsapp</a>
         </div>
-        <div class="bg-blue-900 text-white p-4 rounded-tr">
+        <div class="bg-amber-500 text-white p-4 rounded-tr">
             <a href="tel:{{ $contact->phone ?? '' }}"><i class="bi bi-telephone-plus"></i> Hemen Ara</a>
         </div>
 
@@ -186,17 +186,15 @@ $social = \App\Models\Social::all();
                     <h4 class="text-white text-2xl font-semibold uppercase">Gebze Kiralık Vinç, Sepetli Vinç</h4>
                     <p class="my-4 text-gray-100 leading-relaxed">Gebze RMC Vinç kiralama firması olarak, müşterilerimize vinç kiralama, manlift kiralama, forklift kiralama, sepetli vinç kiralama ve makaslı platform kiralama hizmetleri sunuyoruz. Vinç kiralama fiyatları için bizimle iletişime geçin! </p>
                 </div>
-                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 lg:pe-2">
                     <h4 class="text-white text-2xl font-semibold">Bağlantılar</h4>
                     <ul class="my-4 flex flex-col gap-2">
-                        <li><a href="" class="text-white">Kepenk Tamiri</a></li>
-                        <li><a href="" class="text-white">Otomatik Kepenk</a></li>
-                        <li><a href="" class="text-white">Kepenk Fiyatları</a></li>
-                        <li><a href="" class="text-white">Elektrikli Kepenk Fiyatları</a></li>
-                        <li><a href="" class="text-white">Kepenk Servis</a></li>
-                        <li><a href="" class="text-white">Otomatik Kepenk Tamiri</a></li>
-                        <li><a href="" class="text-white">İstanbul Kepenk Tamiri</a></li>
-                        <li><a href="" class="text-white">Elektrikli Kepenk</a></li>
+                        @php
+                        $services = \App\Models\Services::all();
+                        @endphp
+                        @foreach($services as $service)
+                            <li><a href="{{ route('service.detail', $service->slug) }}" class="text-white"><i class="bi bi-arrow-right-short"></i> {{ $service->title }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
