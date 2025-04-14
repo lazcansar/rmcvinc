@@ -13,7 +13,7 @@
 
     <section class="px-4 lg:px-0 py-8 bg-gray-50">
         <div class="container mx-auto">
-            <h1 class="text-4xl text-center font-bold text-indigo-900"><i class="bi bi-images"></i> Galeri</h1>
+            <h1 class="text-4xl text-center font-bold text-amber-700"><i class="bi bi-images"></i> Galeri</h1>
             <p class="text-center text-gray-700 mt-2">Elis Kepenk olarak yapmış olduğunuz çalışmalara ait fotoğraflar...</p>
             <div class="my-4 flex flex-col sm:flex-row flex-wrap gallery-container">
                 @foreach($images as $image)

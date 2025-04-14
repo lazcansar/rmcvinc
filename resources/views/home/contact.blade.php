@@ -26,12 +26,12 @@
                             <input type="email" name="email" placeholder="E-Posta" class="border px-4 py-2 rounded w-full outline-none focus:outline-none bg-gray-100 focus:bg-white">
                             <input type="tel" name="phone" placeholder="Telefon Numarası" class="border px-4 py-2 rounded w-full outline-none focus:outline-none bg-gray-100 focus:bg-white">
                             <textarea name="message" placeholder="Mesajınız..."  class="border px-4 py-2 rounded w-full outline-none focus:outline-none bg-gray-100 focus:bg-white" rows="5"></textarea>
-                            <button type="submit" class="w-full bg-sky-700 text-white py-2 rounded transition hover:bg-sky-600 uppercase"><i class="bi bi-envelope"></i> Gönder</button>
+                            <button type="submit" class="w-full bg-amber-700 text-white py-2 rounded transition hover:bg-amber-600 uppercase"><i class="bi bi-envelope"></i> Gönder</button>
                         </div>
                     </form>
                 </div>
                 <div class="w-full md:w-3/5" data-aos="fade-left">
-                    <div class="bg-indigo-950 p-8 text-white rounded-lg shadow-md">
+                    <div class="bg-amber-800 p-8 text-white rounded-lg shadow-md">
                         <h3 class="text-2xl mb-4">İletişim Bilgilerimiz</h3>
                         <ul class="flex flex-col gap-2">
                             <li class="flex gap-2 items-center"><i class="bi bi-map"></i> {{ $contact->address ?? '' }}</li>

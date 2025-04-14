@@ -13,7 +13,7 @@
 
     <section class="px-4 lg:px-0 py-8 bg-gray-50">
         <div class="container mx-auto">
-            <h1 class="text-4xl text-center font-bold text-indigo-900">Blog Sayfası</h1>
+            <h1 class="text-4xl text-center font-bold text-amber-700">Blog Sayfası</h1>
             <p class="text-center text-gray-700 mt-2"></p>
             <div class="flex flex-col md:flex-row flex-wrap gap-y-4 mt-8">
                 @foreach($blogs as $blog)

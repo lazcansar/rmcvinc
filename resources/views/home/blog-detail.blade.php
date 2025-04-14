@@ -27,18 +27,18 @@
                 <article class="w-full md:w-2/3 md:pe-8">
                     <img src="{{ asset("/storage/$blog->image_path") }}" alt="{{ $blog->title }}" class="rounded shadow w-full object-cover max-h-72 mb-4">
                     <div class="flex flex-row items-center justify-between">
-                        <span class="text-indigo-950">{{ $blog->updated_at->format("d.m.Y") }}</span>
+                        <span class="text-amber-700">{{ $blog->updated_at->format("d.m.Y") }}</span>
                     </div>
-                    <h1 class="text-4xl font-semibold text-indigo-900">{{ $blog->title }}</h1>
+                    <h1 class="text-4xl font-semibold text-amber-700">{{ $blog->title }}</h1>
                     {!! $blog->description !!}
 
                 </article>
                 <div class="w-full md:w-1/3">
                     <div class="p-4 bg-gray-100 border">
-                        <h3 class="text-xl font-medium text-indigo-900 mb-2">Son Blog Yazıları</h3>
+                        <h3 class="text-xl font-medium text-amber-700 mb-2">Son Blog Yazıları</h3>
                         <ul>
                             @foreach($blogs as $blogList)
-                                <li class="py-2 border-b text-indigo-950"><a href="{{ route('blog.detail', $blogList->slug) }}" class="ms-0 transition-all hover:ms-1"><i class="bi bi-box-arrow-right"></i> {{ $blogList->title }}</a></li>
+                                <li class="py-2 border-b text-amber-700"><a href="{{ route('blog.detail', $blogList->slug) }}" class="ms-0 transition-all hover:ms-1"><i class="bi bi-box-arrow-right"></i> {{ $blogList->title }}</a></li>
                             @endforeach
                         </ul>
                     </div>
