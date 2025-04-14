@@ -1,6 +1,6 @@
 @extends('theme')
 @section('title'){{'İletişim'}}@endsection
-@section('description'){{'Elis Kepenk sistemleri iletişim numaramız ' . $contact->phone}}@endsection
+@section('description'){{'RMC Vinç Platform, Gebze Vinç Kiralama İletişim Numarası ' . $contact->phone}}@endsection
 @section('main')
 
     @php
