@@ -21,7 +21,7 @@
     <meta property="og:description" content="@yield('description')">
     <meta property="og:site_name" content="Elis Kepenk">
     <meta property="og:url" content="{{ URL::current() }}">
-    <meta property="og:image" content="{{ asset("/storage/images/theme/logo.png") }}"/>
+    <meta property="og:image" content="{{ asset("/storage/images/rmc-gebze-sepetli-vinc.png") }}"/>
     <meta property="og:image:type" content="image/svg+xml">
     <meta property="og:locale" content="tr_TR"/>
     <!-- Social Media Meta Tags -->
@@ -45,7 +45,7 @@
               "description": "Gebze Vinç Kiralama, Sepetli Vinç Kiralama, Manlift Kiralama, Forklift Kiralama firması olarak hizmet veriyoruz.",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://eylulhaliyikamaustasi.com/images/eylul-hali-yikama-logo.png",
+                "url": "{{ asset("/storage/images/rmc-gebze-sepetli-vinc.png") }}",
                 "width": 200,
                 "height": 100
               },
@@ -81,7 +81,7 @@
               "inLanguage": "tr-TR",
               "primaryImageOfPage":{
                   "@type":"ImageObject",
-                  "url":"https://eylulhaliyikamaustasi.com/storage/images/eylul-hali-yikama-logo.png"
+                  "url":"{{ asset("/storage/images/rmc-gebze-sepetli-vinc.png") }}"
               }
             }
           ]
