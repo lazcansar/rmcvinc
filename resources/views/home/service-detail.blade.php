@@ -49,7 +49,7 @@
                 </article>
                 <div class="w-full md:w-1/3">
                     <div class="p-4 bg-gray-50 border rounded">
-                        <h3 class="text-xl font-medium text-amber-700 mb-2">Diğer Hizmetlerimiz</h3>
+                        <h3 class="text-xl font-medium text-amber-700 mb-2">Vinç Kiralama Hizmetlerimiz</h3>
                         <ul>
                             @foreach($services as $listService)
                                 <li class="py-2 border-b text-amber-700"><a href="{{ route('service.detail', $listService->slug) }}" class="ms-0 transition-all hover:ms-1"><i class="bi bi-box-arrow-right"></i> {{ $listService->title }}</a></li>
