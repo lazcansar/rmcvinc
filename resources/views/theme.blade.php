@@ -13,6 +13,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="@yield('keywords')">
     <meta name="robots" content="index, follow">
     <!-- Social Media Meta Tags -->
     <meta property="og:type" content="website"/>
@@ -137,8 +138,7 @@ $social = \App\Models\Social::all();
                 <div class="w-full text-3xl flex items-center gap-2 font-bold justify-between">
                     <div class="text-indigo-950">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset("/storage/images/theme/logo.png") }}" class="h-12 inline-block" alt="">
-                            ELİS KEPENK
+                            <img src="{{ asset("/storage/images/rmc-gebze-sepetli-vinc.png") }}" class="h-12 inline-block" alt="">
                         </a>
                     </div>
                     <div>

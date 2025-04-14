@@ -1,6 +1,7 @@
 @extends('theme')
 @section('title'){{'Gebze Vinç Kiralama, Sepetli Vinç Kiralama'}}@endsection
 @section('description'){{'Gebze vinç kiralama, kiralık vinç ve sepetli vinç kiralama ile manlift kiralama hizmetlerimiz bulunmaktadır.'}}@endsection
+@section('keywords'){{'Gebze kiralık vinç, gebze vinç kiralama, sepetli vinç, manlift, forklift, makaslı platform, eklemli platform, manlift kiralama, forklift kiralama, sepetli vinç kiralama'}}@endsection
 @section('main')
 
     <section>
@@ -19,7 +20,7 @@
                             RMC Vinç olarak, ağır işlerinizi hafifletiyoruz. Kaldırma Gücünüz, Çözüm Ortağınız!
                         </div>
                         <a href="https://api.whatsapp.com/send?phone=9{{ str_replace(' ', '', $contact->whatsapp ?? '') }}" class="bg-amber-700 transition hover:bg-amber-800 text-white px-4 py-2 rounded inline-block"><i class="bi bi-whatsapp"></i> Hemen İletişime Geç</a>
-                        <a href="tel:{{ $contact->phone ?? '' }}" class="bg-sky-800 transition hover:bg-indigo-950 text-white px-4 py-2 rounded inline-block"><i class="bi bi-telephone-plus"></i> Hemen Ara</a>
+                        <a href="tel:{{ $contact->phone ?? '' }}" class="bg-amber-600 transition hover:bg-amber-800 text-white px-4 py-2 rounded inline-block"><i class="bi bi-telephone-plus"></i> Hemen Ara</a>
                     </div>
                 </div>
             </div>
@@ -28,33 +29,32 @@
 
     <section class="px-4 lg:px-0 py-8 bg-gray-100 about">
         <div class="container mx-auto">
-            <h3 class="text-4xl text-center font-bold text-indigo-950">Hakkımızda</h3>
-            <p class="text-center text-gray-700 mt-2 text-lg">Bizi daha yakından tanıyın.</p>
-            <div class="flex flex-col md:flex-row flex-wrap items-center mt-8 gap-y-4">
-                <div class="w-full md:w-1/2 md:pe-8">
-                    <div class="relative">
-                        <img src="{{ asset("/storage/images/theme/garaj-kepenk.webp") }}" class="w-full rounded-lg shadow-md" alt="Elis Kepenk">
-                        <span class="absolute -left-2 -bottom-2 bg-white p-4 rounded-lg shadow text-center"><strong class="text-4xl text-indigo-800">E</strong> <span class="block text-sky-800 font-medium text-xl">ELİS</span></span>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2">
-                    <h3 class="uppercase text-3xl font-bold text-indigo-950">Elis Kepenk</h3>
+            <h2 class="text-4xl text-center font-bold text-amber-700">Kurumsal</h2>
+            <p class="text-center text-gray-700 mt-2 text-lg">RMC Vinç Platform olarak, Gebze vinç kiralama hizmeti veriyoruz.</p>
+            <div class="flex flex-col-reverse md:flex-row flex-wrap items-center mt-8 gap-y-4">
+                <div class="w-full md:w-2/3">
+                    <h3 class="uppercase text-3xl font-bold text-amber-700">RMC Vinç Platform</h3>
                     <p class="text-gray-700 leading-relaxed my-2">
-                        Elis Kepenk firması olarak kepenk yapımı, kepenk tamiri ve kepenk servislerimiz ile müşterilerimize profesyonel hizmet veriyoruz. </p>
-                    <p class="text-gray-700 leading-relaxed my-2">İstanbul ili Avrupa yakası ve Anadolu yakasında kepenk tamiri yapıyoruz. Bozulan veya onarılması gereken kepenk motorlarını tamir ediyoruz. Otomatik kepenk tamiri ile kepenkleriniz ilk günki sağlığına ulaşacak.</p>
-                    <p class="text-gray-700 leading-relaxed my-2">İstanbul Kepenk Tamiri denildiğinde akla gelen firmalardan olan Elis Kepenk firmasının profesyonel hizmetlerinden yararlanmak için hemen bizimle iletişime geçin.</p>
-                    <a href="{{ $contact->phone ?? '' }}" class="bg-indigo-900 transition hover:bg-sky-700 text-white px-4 py-2 rounded inline-block"><i class="bi bi-telephone"></i> {{ $contact->phone ?? '' }}</a>
+                        Müşterilerine kaliteli ve güvenli bir şekilde hizmet sunmayı kendisine ilke edinmiş iş tecrübesi ile siz sayın müsterilerimizin vinç ve platform kiralamalarında ve operasyonlarında çözüm ortağınız olarak yanınızda olmak isteriz.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed my-2">
+                        Firmamız bünyesinde; Manlift, Forklift, Sepetli Vinç, Mobil Vinç, Makaslı Platform ve Eklemli Platform olmak üzere bir çok vinç çeşidi bulunmaktadır. Uzman kadromuz ile müşterilerimize her türlü ihtiyaca uygun profesyonel vinç kiralama hizmeti veriyoruz.
+                    </p>
                     <a href="{{ route('about') }}" class="bg-sky-800 transition hover:bg-indigo-900 text-white px-4 py-2 rounded inline-block"><i class="bi bi-caret-right"></i> Kurumsal</a>
                 </div>
-
+                <div class="w-full md:w-1/3 md:pe-8">
+                    <div class="relative">
+                        <img src="{{ asset("/storage/images/gebze-rmc-vinc-kiralama.webp") }}" class="w-full rounded-lg shadow-md" alt="RMC Vinç Kiralama firması" title="RMC Vinç Platform">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="px-4 lg:px-0 my-8 gallery">
         <div class="container mx-auto">
-            <h3 class="text-4xl text-center font-bold text-indigo-950">Galeri</h3>
-            <p class="text-center text-gray-700 mt-2 text-lg">Elis Kepenk olarak yapmış olduğunuz çalışmalara ait fotoğraflar...</p>
+            <h3 class="text-4xl text-center font-bold text-amber-700">Galeri</h3>
+            <p class="text-center text-gray-700 mt-2 text-lg">RMC Vinç Platform olarak yapmış olduğunuz çalışmalara ait fotoğraflar...</p>
             <div class="text-end">
                 <a href="{{ route('gallery') }}" class="inline-block py-2 px-4 bg-indigo-900 transition hover:bg-sky-700 text-white rounded">Tüm Fotoğraflar</a>
             </div>

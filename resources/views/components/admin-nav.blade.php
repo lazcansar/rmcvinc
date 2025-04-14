@@ -1,4 +1,4 @@
-<nav class="py-4 bg-sky-700">
+<nav class="py-4 bg-amber-700">
     <div class="container mx-auto">
         <ul class="text-white flex flex-col sm:flex-row gap-4">
             <li><a href="{{ route('admin.index') }}"><i class="bi bi-house"></i> Anasayfa</a></li>
