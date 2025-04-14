@@ -1,6 +1,6 @@
 @extends('theme')
 @section('title'){{'Giriş Yap'}}@endsection
-@section('description'){{'Elis Kepenk Giriş Sayfası'}}@endsection
+@section('description'){{'RMC Vinç Platform Giriş Sayfası'}}@endsection
 @section('main')
     @php
         $breadcrumbItems = [

@@ -1,6 +1,6 @@
 @extends('theme')
 @section('title'){{'Blog'}}@endsection
-@section('description'){{'Elis Kepenk sistemleri blog sayfası'}}@endsection
+@section('description'){{'Gebze Vinç Kiralama Blog Sayfası'}}@endsection
 @section('main')
 
     @php

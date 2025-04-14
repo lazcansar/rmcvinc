@@ -1,6 +1,6 @@
 @extends('theme')
 @section('title'){{'Hizmetler'}}@endsection
-@section('description'){{'Elis Kepenk firması olarak kepenk tamiri, otomatik kepenk sistemleri, kepenk servis hizmeti ve daha fazlası...'}}@endsection
+@section('description'){{'Gebze Kiralık Vinç, Vinç Kiralama, Manlift Kiralama, Sepetli Vinç Kiralama, Forklift Kiralama, Eklemli Platform Kiralama, Makaslı Platform Kiralama hizmetlerimiz ile müşterilerimizin yanındayız.'}}@endsection
 @section('main')
 
     @php
