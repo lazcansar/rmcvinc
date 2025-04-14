@@ -52,7 +52,7 @@
                     <p class="text-gray-700 leading-relaxed my-2">
                         Firmamız bünyesinde; Manlift, Forklift, Sepetli Vinç, Mobil Vinç, Makaslı Platform ve Eklemli Platform olmak üzere bir çok vinç çeşidi bulunmaktadır. Uzman kadromuz ile müşterilerimize her türlü ihtiyaca uygun profesyonel vinç kiralama hizmeti veriyoruz.
                     </p>
-                    <a href="{{ route('about') }}" class="bg-sky-800 transition hover:bg-indigo-900 text-white px-4 py-2 rounded inline-block"><i class="bi bi-caret-right"></i> Kurumsal</a>
+                    <a href="{{ route('about') }}" class="bg-amber-700 transition hover:bg-amber-800 text-white px-4 py-2 rounded inline-block"><i class="bi bi-caret-right"></i> Kurumsal</a>
                 </div>
                 <div class="w-full md:w-1/2 md:pe-8">
                     <div class="relative">
