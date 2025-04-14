@@ -69,7 +69,7 @@
             <h3 class="text-4xl text-center font-bold text-amber-700">Galeri</h3>
             <p class="text-center text-gray-700 mt-2 text-lg">RMC Vinç Platform olarak yapmış olduğunuz çalışmalara ait fotoğraflar...</p>
             <div class="text-end">
-                <a href="{{ route('gallery') }}" class="inline-block py-2 px-4 bg-indigo-900 transition hover:bg-sky-700 text-white rounded">Tüm Fotoğraflar</a>
+                <a href="{{ route('gallery') }}" class="inline-block py-2 px-4 bg-amber-700 transition hover:bg-amber-800 text-white rounded">Tüm Fotoğraflar</a>
             </div>
             <div class="my-4 flex flex-col sm:flex-row flex-wrap gallery-container">
                 @foreach($images as $image)
@@ -81,7 +81,7 @@
                     @endphp
                     <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 relative" data-aos="zoom-in">
                         <img src="{{ asset("/storage/images/gallery/$imagename") }}" class="gallery-image w-full rounded-lg shadow transition-shadow hover:shadow-lg border cursor-pointer aspect-square">
-                        <div class="absolute right-[9px] bottom-[9px] text-4xl bg-white p-2 rounded-tl-xl cursor-pointer"><i class="bi bi-arrow-up-right-circle transition hover:rotate-45 text-sky-700"></i></div>
+                        <div class="absolute right-[9px] bottom-[9px] text-4xl bg-white p-2 rounded-tl-xl cursor-pointer"><i class="bi bi-arrow-up-right-circle transition hover:rotate-45 text-amber-800"></i></div>
                     </div>
                 @endforeach
             </div>
@@ -97,7 +97,7 @@
             <h3 class="text-4xl font-bold text-amber-700 text-center">Blog</h3>
             <p class="my-2 text-gray-700 text-center text-lg">Yeni yazılarımız yayında! Keşfetmek için hemen tıklayın...</p>
             <div class="text-end">
-                <a href="{{ route('blog') }}" class="inline-block py-2 px-4 bg-indigo-900 transition hover:bg-sky-700 text-white rounded">Tümünü görüntüle</a>
+                <a href="{{ route('blog') }}" class="inline-block py-2 px-4 bg-amber-700 transition hover:bg-amber-800 text-white rounded">Tümünü görüntüle</a>
             </div>
             <div class="flex flex-col sm:flex-row flex-wrap">
                 @foreach($blogs as $blog)
