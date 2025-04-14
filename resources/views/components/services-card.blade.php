@@ -1,5 +1,5 @@
 <article class="w-full md:w-1/3 lg:w-1/4 p-2" data-aos="zoom-in">
-    <div class="p-4 bg-white shadow-sm hover:shadow-md rounded-md transition hover:-translate-y-1">
+    <div class="p-4 bg-white border shadow hover:shadow-md rounded-md transition hover:-translate-y-1">
         <a href="{{ route('service.detail', $service->slug) }}" class="relative block image-hover">
             <img src="{{ asset("/storage/$service->image_path") }}" class="w-full object-contain rounded-lg">
             <span class="image-arrow absolute bg-indigo-950 text-4xl p-4 rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 transition opacity-0"><i class="bi bi-arrow-up-right-circle-fill text-white"></i></span>
